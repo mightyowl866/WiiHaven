@@ -38,6 +38,7 @@ html {
     border: 1vh solid #FFFFFF;
 }
 
+/* added margin-left and right to center tiles. */
 .tile {
     margin-top: 5vh;
     display: inline-block;

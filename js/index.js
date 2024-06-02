@@ -20,6 +20,8 @@ function startup() {
   
 
   // HARD CODDED TILES (If you add here, please be concious of users Saved tiles, and be sure to incriment #s in the tile-manager so there is not issues)
+  // Since at the moment the ability to add games is not added, I hard coded the examples below as a proof of concept.
+  //The user should be able to add their own games via Steam, GOG, EGS, Itch, etc, and they should be able to add their own images, sounds, etc per game.
   let box1Prev = "assets/sa2_hero.webp";
   localStorage.setItem("box1-preview", box1Prev);
   let box2Prev = "assets/p3reload_hero.webp";

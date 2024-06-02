@@ -74,11 +74,14 @@ body {
     box-shadow: 0 0 10px #509fc6;
 }
 
+/* Adjust margin-left of .start-wrap */
 .start-wrap {
     margin-top: 8vh;
     margin-left: 8vw;
 }
 
+
+/* Adjust margin-left of .display-wrap */
 .display-wrap {
     margin-top: 1vh;
     margin-left: 8vw;
@@ -348,6 +351,7 @@ a {
 
 
 .slide {
+    /*adjusted width of .slide*/
     width: 100vw;
     height: 100vh;
   }

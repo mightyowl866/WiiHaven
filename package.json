@@ -1,0 +1,29 @@
+{
+  "name": "wiihaven",
+  "version": "1.0.0",
+  "description": "A Desktop GUI for your games designed to be like the Wii Menu.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mightyowl866/WiiHaven"
+  },
+  "keywords": [
+    "GUI",
+    "Gaming",
+    "PCGaming",
+    "Nintendo",
+    "Wii"
+  ],
+  "author": "mightyowl866 (Ryan Grant)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mightyowl866/WiiHaven/issues"
+  },
+  "homepage": "https://github.com/mightyowl866/WiiHaven#readme",
+  "devDependencies": {
+    "electron": "^30.0.8"
+  }
+}

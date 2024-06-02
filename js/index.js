@@ -20,20 +20,36 @@ function startup() {
   
 
   // HARD CODDED TILES (If you add here, please be concious of users Saved tiles, and be sure to incriment #s in the tile-manager so there is not issues)
-  let box1Prev = "assets/nsmbdsf.jpg";
+  let box1Prev = "assets/sa2_hero.webp";
   localStorage.setItem("box1-preview", box1Prev);
-  let box2Prev = "assets/nes-tile.webp";
+  let box2Prev = "assets/p3reload_hero.webp";
   localStorage.setItem("box2-preview", box2Prev);
-  let box3Prev = "assets/nes-tile.webp";
+  let box3Prev = "assets/amongus.png";
   localStorage.setItem("box3-preview", box3Prev);
   let box4Prev = "assets/smbwii.jpg";
   localStorage.setItem("box4-preview", box4Prev);
+  let box5Prev = "assets/pizzatower.png";
+  localStorage.setItem("box5-preview", box5Prev);
+  let box6Prev = "assets/votv.jpg";
+  localStorage.setItem("box6-preview", box6Prev);
+  let box7Prev = "assets/sonicfrontiers.webp";
+  localStorage.setItem("box7-preview", box7Prev);
+  let box8Prev = "assets/soniccolors.webp";
+  localStorage.setItem("box8-preview", box8Prev);
+  let box9Prev = "assets/totk.png";
+  localStorage.setItem("box9-preview", box9Prev);
+  let box10Prev = "assets/terraria.png";
+  localStorage.setItem("box10-preview", box10Prev);
+  let box11Prev = "assets/ttyd.webp";
+  localStorage.setItem("box11-preview", box11Prev);
+  let box12Prev = "assets/platinum.webp";
+  localStorage.setItem("box12-preview", box12Prev);
 
-  let box1Img = "assets/nsmbdsf.jpg";
+  let box1Img = "assets/sa2.png";
   localStorage.setItem("box1-image", box1Img);
-  let box2Img = "assets/nes-tile.webp";
+  let box2Img = "assets/p3reload_hero.webp";
   localStorage.setItem("box2-image", box2Img);
-  let box3Img = "assets/nes-tile.webp";
+  let box3Img = "assets/amongus.png";
   localStorage.setItem("box3-image", box3Img);
   let box4Img = "assets/smbwii.jpg";
   localStorage.setItem("box4-image", box4Img);

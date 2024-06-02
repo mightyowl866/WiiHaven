@@ -173,7 +173,10 @@ overflow-x: hidden;
 h3 {
     padding: 1vh;
 }
+p{
 
+    color: white;
+}
 .goHome {
   font-size: 5vh;
   text-decoration: none;

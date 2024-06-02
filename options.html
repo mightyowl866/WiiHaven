@@ -1,18 +1,14 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
+<style>
+    .container {
+      display: none;
+    }
+  </style>
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/options.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YSHQCXP78J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YSHQCXP78J');
-</script>
 </head>
 
 
@@ -26,24 +22,64 @@
     <hr class="setting-line"></div>
 
     <div class="center">
-    <a href="tile-manager.html"><div class="tile">
+    <div class="tile" id="tileManager">
         <h1 class="tile-text"> Tile Manager </h1>
-    </div></a>
-
-    <a href="settings.html"><div class="tile">
-        <h1 class="tile-text"> Other Options </h1>
-    </div></a>
-
-    <a href="https://github.com/Math-Study/wii-gba"><div class="tile">
-        <h1 class="tile-text"> Console Information </h1>
-    </div></a>
     </div>
 
-    <hr class="setting-line-2"></div>
+    <div class="tile" id="otherOptions">
+        <h1 class="tile-text"> Other Options </h1>
+    </div>
 
+    <a href="https://github.com/mightyowl866/WiiHaven" target="_blank">
+      <div class="tile" id="githubLink">
+          <h1 class="tile-text"> Github </h1>
+      </div>
+  </a>
+    </div>
+    <div class="container center">
+        <div class="drop-targets">
+          <h1 class="settings">Tile Editor</h1><br>
+          <p>Please select the tile you'd like to manage</p>
+          <br>
+          <div class="slide one">
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <br><br>
+            <div class="box" id="box9"></div>
+            <div class="box" id="box10"></div>
+            <div class="box" id="box11"></div>
+            <div class="box" id="box12"></div>
+            <br><br>
+            <div class="box" id="box13"></div>
+            <div class="box" id="box14"></div>
+            <div class="box" id="box15"></div>
+            <div class="box" id="box16"></div>
+          </div>
+          <div class="slide two">
+            <div class="box" id="box17"></div>
+            <div class="box" id="box18"></div>
+            <div class="box" id="box19"></div>
+            <div class="box" id="box20"></div>
+            <br><br>
+            <div class="box" id="box21"></div>
+            <div class="box" id="box22"></div>
+            <div class="box" id="box23"></div>
+            <div class="box" id="box24"></div>
+            
+          </div>
+        </div><br>
+        <div class="tile-2" id="returnButton">
+            <h1 class="tile-text"> Return </h1>
+        </div>
+      </div>
+    <hr class="setting-line-2"></div>
+    <div class="center">
     <a href="index.html"><div class="tile-2">
         <h1 class="tile-text"> Back </h1>
     </div></a>
+    </div>  
     
 
 
@@ -51,6 +87,31 @@
 
 
 
+<!-- # TODO: Fix the below script to keep center regardless. -->
+<script>
 
 
+
+    // Assuming the Tile Manager button has an id of 'tileManager'
+    document.getElementById('tileManager').addEventListener('click', function() {
+      // Show the container
+      document.querySelector('.container').style.display = 'block';
+  
+      // Hide the Tile Manager, Other Options, and Github <a> tags
+      // Replace 'tileManager', 'otherOptions', 'githubLink' with their actual ids
+      document.getElementById('tileManager').style.display = 'none';
+      document.getElementById('otherOptions').style.display = 'none';
+      document.getElementById('githubLink').style.display = 'none';
+    });
+    document.getElementById('returnButton').addEventListener('click', function() {
+      // Hide the container
+      document.querySelector('.container').style.display = 'none';
+  
+      // Show the Tile Manager, Other Options, and Github <a> tags
+      // Replace 'tileManager', 'otherOptions', 'githubLink' with their actual ids
+      document.getElementById('tileManager').style.display = 'block';
+      document.getElementById('otherOptions').style.display = 'block';
+      document.getElementById('githubLink').style.display = 'block';
+    });
+  </script>
 </html>

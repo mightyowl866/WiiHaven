@@ -76,12 +76,12 @@ body {
 
 .start-wrap {
     margin-top: 8vh;
-    margin-left: 5vw;
+    margin-left: 8vw;
 }
 
 .display-wrap {
     margin-top: 1vh;
-    margin-left: 5vw;
+    margin-left: 8vw;
 }
 
 .bottom {
@@ -348,7 +348,7 @@ a {
 
 
 .slide {
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
   }
   .wrapper {

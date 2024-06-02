@@ -1,6 +1,5 @@
 ![screenshot](https://github.com/mightyowl866/WiiHaven/blob/main/assets/wiiHaven_Logo.png)  
 WiiHaven is a Desktop GUI program that lets you combine your Steam, GOG, EGS library and more, all in the style of the Wii Menu!
-
 # To-Do list
 - Add ability to add games from Steam/GOG/EGS library either through their EXE. files or AppId's
 - Add ability to remove games.
@@ -10,4 +9,4 @@ WiiHaven is a Desktop GUI program that lets you combine your Steam, GOG, EGS lib
 - Clean up the code, and provide better documentation
 
 # Credits
-- This is modified version of the [wii-gba](https://github.com/Math-Study/wii-gba) repository, so special thanks to [Cattn Logan](https://github.com/Cattn) and [Nailington](https://github.com/Nailington) Without their original code this project would not have been possible.
+- This is modified version of the [wii-gba](https://github.com/Math-Study/wii-gba) repository, so special thanks to [Cattn Logan](https://github.com/Cattn) and [Nailington](https://github.com/Nailington). Without their original code this project would not have been possible.

@@ -21,6 +21,15 @@ html {
     color: #FFFFFF;
     display: inline-block;
 }
+.settings_h2 {
+    font-family: 'Baloo Da';
+    font-style: normal;
+    font-size: 3vw;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+}
 
 .center {
     text-align: center;
@@ -95,8 +104,8 @@ p{
 }
 /* Tile Management */
 .box {
-    height: 10vw;
-    width: 10vw;
+    height: 9.3vw;
+    width: 20vw;
     border: solid 0.4vh #ccc;
     margin: 0.8vh;
     border-radius: 1vh;

@@ -5,9 +5,10 @@
 
 
 html {
-    background-color: #E4E4E4;
+    /* Set the background color to light gray */
+    /* background-color: #E4E4E4; */
     overflow-y: hidden;
-    background-image: url("../assets/mainbg.png");
+    /* background-image: url("../assets/mainbg.png"); */
     background-repeat: repeat-x repeat-y;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -22,7 +23,10 @@ body {
     margin: 0px;
 }
 
-
+#backgroundStripes {
+    background-color: #E4E4E4;
+    background-image: repeating-linear-gradient(to bottom, transparent, transparent 2px, rgba(0, 0, 0, 0.058) 2px, rgba(0, 0, 0, 0.058) 4px);
+}
 
 .empty-tile {
     background: #D9D9D9;

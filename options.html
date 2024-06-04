@@ -4,6 +4,9 @@
     .container {
       display: none;
     }
+    .slide-two{
+      display: none;
+    }
   </style>
 <html>
 <!--Removed Google Tag Manager.-->
@@ -40,38 +43,70 @@
     <!--In the future, the manager should let the user add their games, images and sounds through this menu, via clicking on the respective tiles.-->
     <div class="container center">
         <div class="drop-targets">
-          <h1 class="settings">Tile Editor</h1><br>
+          <h2 class="settings_h2">Tile Editor</h2><br>
           <p>Please select the tile you'd like to manage</p>
           <br>
-          <div class="slide one">
-            <div class="box" id="box5"></div>
-            <div class="box" id="box6"></div>
-            <div class="box" id="box7"></div>
-            <div class="box" id="box8"></div>
-            <br><br>
-            <div class="box" id="box9"></div>
-            <div class="box" id="box10"></div>
-            <div class="box" id="box11"></div>
-            <div class="box" id="box12"></div>
-            <br><br>
-            <div class="box" id="box13"></div>
-            <div class="box" id="box14"></div>
-            <div class="box" id="box15"></div>
-            <div class="box" id="box16"></div>
-          </div>
-          <div class="slide two">
-            <div class="box" id="box17"></div>
-            <div class="box" id="box18"></div>
-            <div class="box" id="box19"></div>
-            <div class="box" id="box20"></div>
-            <br><br>
-            <div class="box" id="box21"></div>
-            <div class="box" id="box22"></div>
-            <div class="box" id="box23"></div>
-            <div class="box" id="box24"></div>
-            
-          </div>
+
+
+          <table class="slide one">
+            <thead>
+              <tr>
+                <th colspan="4" class="settings_h2">Slide One</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="box" id="box1"></td>
+                <td class="box" id="box2"></td>
+                <td class="box" id="box3"></td>
+                <td class="box" id="box4"></td>
+              </tr>
+              <tr>
+                <td class="box" id="box5"></td>
+                <td class="box" id="box6"></td>
+                <td class="box" id="box7"></td>
+                <td class="box" id="box8"></td>
+              </tr>
+              <tr>
+                <td class="box" id="box9"></td>
+                <td class="box" id="box10"></td>
+                <td class="box" id="box11"></td>
+                <td class="box" id="box12"></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+          <table class="slide-two">
+            <thead>
+              <tr>
+                <th colspan="4" class="settings_h2">Slide Two</th>
+              </tr>
+            </thead>
+            <tr>
+              <td class="box" id="box13"></td>
+              <td class="box" id="box14"></td>
+              <td class="box" id="box15"></td>
+              <td class="box" id="box16"></td>
+            </tr>
+            <tr>
+              <td class="box" id="box17"></td>
+              <td class="box" id="box18"></td>
+              <td class="box" id="box19"></td>
+              <td class="box" id="box20"></td>
+            </tr>
+            <tr>
+              <td class="box" id="box21"></td>
+              <td class="box" id="box22"></td>
+              <td class="box" id="box23"></td>
+              <td class="box" id="box24"></td>
+            </tr>
+          </table>
         </div><br>
+        <div class="tile-2" id="toggleButton">
+          <h1 class="tile-text"> Next Slide </h1>
+        </div>
         <div class="tile-2" id="returnButton">
             <h1 class="tile-text"> Return </h1>
         </div>
@@ -81,19 +116,13 @@
     <a href="index.html"><div class="tile-2">
         <h1 class="tile-text"> Back </h1>
     </div></a>
-    </div>  
-    
-
-
+    </div>
 </body>
 
 
 
 <!--Script that displays the tile manager when clicked.--> 
 <script>
-
-
-
     // Assuming the Tile Manager button has an id of 'tileManager'
     document.getElementById('tileManager').addEventListener('click', function() {
       // Show the container
@@ -115,5 +144,17 @@
       document.getElementById('otherOptions').style.display = 'block';
       document.getElementById('githubLink').style.display = 'block';
     });
+    document.getElementById('toggleButton').addEventListener('click', function() {
+      var slideOne = document.querySelector('.slide.one');
+      var slideTwo = document.querySelector('.slide-two');
+  
+      if (slideOne.style.display !== 'none') {
+          slideOne.style.display = 'none';
+          slideTwo.style.display = 'block';
+      } else {
+          slideOne.style.display = 'block';
+          slideTwo.style.display = 'none';
+      }
+  });
   </script>
 </html>

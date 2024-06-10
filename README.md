@@ -9,4 +9,4 @@ WiiHaven is a Desktop GUI program that lets you combine your Steam, GOG, EGS lib
 - Clean up the code, and provide better documentation
 
 # Credits
-- This is modified version of the [wii-gba](https://github.com/Math-Study/wii-gba) repository, so special thanks to [Cattn Logan](https://github.com/Cattn) and [Nailington](https://github.com/Nailington). Without their original code this project would not have been possible.
+- This is modified version of the [wii-gba](https://github.com/Math-Study/wii-gba) repository, so special thanks to [Cattn Logan](https://github.com/Cattn) and [Nailington](https://github.com/Nailington). Without their original code this project would not have been possible. 

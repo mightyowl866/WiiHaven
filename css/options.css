@@ -13,7 +13,7 @@ html {
 }
 
 .settings {
-    font-family: 'Baloo Da';
+    font-family: 'Century Gothic';
     font-style: normal;
     font-size: 7vw;
     align-items: center;
@@ -22,7 +22,7 @@ html {
     display: inline-block;
 }
 .settings_h2 {
-    font-family: 'Baloo Da';
+    font-family: 'Century Gothic';
     font-style: normal;
     font-size: 3vw;
     align-items: center;
@@ -59,6 +59,7 @@ html {
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.3s ease;
 }
 
 .tile:hover {
@@ -84,11 +85,12 @@ html {
     height: 10vh;
     width: 50vw;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 
 .tile-text {
     display: inline-block;
-    font-family: 'Baloo Da';
+    font-family: 'Century Gothic';
     font-style: normal;
     font-size: 7vh;
     padding: 0vh;
@@ -99,7 +101,7 @@ a {
     color: #000000;
 }
 p{
-    font-family: 'Baloo Da';
+    font-family: 'Century Gothic';
     color: white;
 }
 /* Tile Management */

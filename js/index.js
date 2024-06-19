@@ -19,50 +19,50 @@ function startup() {
   PlayHomeSound("homeMusic");
   
 
-  // HARD CODDED TILES (If you add here, please be concious of users Saved tiles, and be sure to incriment #s in the tile-manager so there is not issues)
+  // HARD CODED TILES (If you add here, please be concious of users Saved tiles, and be sure to incriment #s in the tile-manager so there is not issues)
   // Since at the moment the ability to add games is not added, I hard coded the examples below as a proof of concept.
   //The user should be able to add their own games via Steam, GOG, EGS, Itch, etc, and they should be able to add their own images, sounds, etc per game.
-  let box1Prev = "assets/sa2_hero.webp";
+  let box1Prev = "";
   localStorage.setItem("box1-preview", box1Prev);
-  let box2Prev = "assets/p3reload_hero.webp";
+  let box2Prev = "";
   localStorage.setItem("box2-preview", box2Prev);
-  let box3Prev = "assets/amongus.png";
+  let box3Prev = "";
   localStorage.setItem("box3-preview", box3Prev);
-  let box4Prev = "assets/smbwii.jpg";
+  let box4Prev = "";
   localStorage.setItem("box4-preview", box4Prev);
-  let box5Prev = "assets/pizzatower.png";
+  let box5Prev = "";
   localStorage.setItem("box5-preview", box5Prev);
-  let box6Prev = "assets/votv.jpg";
+  let box6Prev = "";
   localStorage.setItem("box6-preview", box6Prev);
-  let box7Prev = "assets/sonicfrontiers.webp";
+  let box7Prev = "";
   localStorage.setItem("box7-preview", box7Prev);
-  let box8Prev = "assets/soniccolors.webp";
+  let box8Prev = "";
   localStorage.setItem("box8-preview", box8Prev);
-  let box9Prev = "assets/totk.png";
+  let box9Prev = "";
   localStorage.setItem("box9-preview", box9Prev);
-  let box10Prev = "assets/terraria.png";
+  let box10Prev = "";
   localStorage.setItem("box10-preview", box10Prev);
-  let box11Prev = "assets/ttyd.webp";
+  let box11Prev = "";
   localStorage.setItem("box11-preview", box11Prev);
-  let box12Prev = "assets/platinum.webp";
+  let box12Prev = "";
   localStorage.setItem("box12-preview", box12Prev);
 
-  let box1Img = "assets/sa2.png";
+  let box1Img = "";
   localStorage.setItem("box1-image", box1Img);
-  let box2Img = "assets/p3reload_hero.webp";
+  let box2Img = "";
   localStorage.setItem("box2-image", box2Img);
-  let box3Img = "assets/amongus.png";
+  let box3Img = "";
   localStorage.setItem("box3-image", box3Img);
-  let box4Img = "assets/smbwii.jpg";
+  let box4Img = "";
   localStorage.setItem("box4-image", box4Img);
 
-  let box1Link = "New_Super_Mario_Bros._(USA)";
+  let box1Link = "";
   localStorage.setItem("box1-link", box1Link);
-  let box2Link = "New_Super_Mario_Bros._(USA)";
+  let box2Link = "";
   localStorage.setItem("box2-link", box2Link);
-  let box3Link = "New_Super_Mario_Bros._(USA)";
+  let box3Link = "";
   localStorage.setItem("box3-link", box3Link);
-  let box4Link = "New_Super_Mario_Bros._(USA)";
+  let box4Link = "";
   localStorage.setItem("box4-link", box4Link);
 
   let box1LinkType = "emu";

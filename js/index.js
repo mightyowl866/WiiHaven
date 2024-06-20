@@ -6,9 +6,6 @@ let link = ""
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-
-
-
 function startup() {
   setTimeout(function() {
     var e = document.getElementById("safety");
@@ -17,63 +14,6 @@ function startup() {
     e.style.visibility = 'hidden';
   }, 0);
   PlayHomeSound("homeMusic");
-  
-
-  // HARD CODED TILES (If you add here, please be concious of users Saved tiles, and be sure to incriment #s in the tile-manager so there is not issues)
-  // Since at the moment the ability to add games is not added, I hard coded the examples below as a proof of concept.
-  //The user should be able to add their own games via Steam, GOG, EGS, Itch, etc, and they should be able to add their own images, sounds, etc per game.
-  let box1Prev = "";
-  localStorage.setItem("box1-preview", box1Prev);
-  let box2Prev = "";
-  localStorage.setItem("box2-preview", box2Prev);
-  let box3Prev = "";
-  localStorage.setItem("box3-preview", box3Prev);
-  let box4Prev = "";
-  localStorage.setItem("box4-preview", box4Prev);
-  let box5Prev = "";
-  localStorage.setItem("box5-preview", box5Prev);
-  let box6Prev = "";
-  localStorage.setItem("box6-preview", box6Prev);
-  let box7Prev = "";
-  localStorage.setItem("box7-preview", box7Prev);
-  let box8Prev = "";
-  localStorage.setItem("box8-preview", box8Prev);
-  let box9Prev = "";
-  localStorage.setItem("box9-preview", box9Prev);
-  let box10Prev = "";
-  localStorage.setItem("box10-preview", box10Prev);
-  let box11Prev = "";
-  localStorage.setItem("box11-preview", box11Prev);
-  let box12Prev = "";
-  localStorage.setItem("box12-preview", box12Prev);
-
-  let box1Img = "";
-  localStorage.setItem("box1-image", box1Img);
-  let box2Img = "";
-  localStorage.setItem("box2-image", box2Img);
-  let box3Img = "";
-  localStorage.setItem("box3-image", box3Img);
-  let box4Img = "";
-  localStorage.setItem("box4-image", box4Img);
-
-  let box1Link = "";
-  localStorage.setItem("box1-link", box1Link);
-  let box2Link = "";
-  localStorage.setItem("box2-link", box2Link);
-  let box3Link = "";
-  localStorage.setItem("box3-link", box3Link);
-  let box4Link = "";
-  localStorage.setItem("box4-link", box4Link);
-
-  let box1LinkType = "emu";
-  localStorage.setItem("box1-linkType", box1LinkType);
-  let box2LinkType = "emu";
-  localStorage.setItem("box2-linkType", box2LinkType);
-  let box3LinkType = "emu";
-  localStorage.setItem("box3-linkType", box3LinkType);
-  let box4LinkType = "emu";
-  localStorage.setItem("box4-linkType", box4LinkType);
-
 
   for (var i = 1; i <= 24; i++) {
     var boxPreview = localStorage.getItem("box" + i + "-preview");
@@ -84,7 +24,6 @@ function startup() {
       tile.style.backgroundImage = "url('assets/empty.gif')";
     }
   }
-
   window.scrollTo(0, 0);
 }
 
@@ -113,10 +52,6 @@ function StopSound(soundobj) {
   thissound.currentTime = 0;
 }
 
-function addClasses(id) {
-  let qid = "#" + id;
-}
-
 window.onload = function() {
   let empties = document.getElementsByClassName("empty-tile");
   for (var i=0; i<empties.length; i++) {
@@ -140,55 +75,13 @@ document.querySelectorAll('.empty-tile').forEach(function(el){
     var romLocation = localStorage.getItem("box" + id + "-rom");
     console.log("Box Link: " + boxLink + " Box Image: " + boxImage + " Box Core: " + boxCore + " Box Link Type: " + boxLinkType + " Rom Location: " + romLocation);
 
-    if (boxLink == null) {
-      document.querySelector("#StartText").href = "404.html";
-    } else if (boxLinkType == "ext") {
-      document.querySelector("#StartText").href = boxLink;
-    } else if (boxLinkType == "emu") {
-      document.querySelector("#StartText").href = 'launchpad.html';
-    } else {
-      document.querySelector("#StartText").href = boxLink;
-    }
-
-    
-    if (boxCore == null) {
-      coreName = 'nds'
-      localStorage.setItem("coreName", coreName);
-      console.log(coreName);
-    } else if (boxLinkType == "emu") { 
-      coreName = boxCore
-      localStorage.setItem("coreName", coreName);
-      console.log(coreName);
-    } else {
-      coreName = 'nds'
-      localStorage.setItem("coreName", coreName);
-      console.log(coreName);
-    }
     if (boxImage == null) {
       document.querySelector("#tile-content").style.backgroundImage = "url('assets/nsmbds.jpg')";
     } else {
       document.querySelector("#tile-content").style.backgroundImage = "url('" + boxImage + "')";
     }
     
-    if (romLocation === null) {
-      console.log("Rom Location Not Found Saving Info anyway")
-      localStorage.setItem("internal", 'true');
-      localStorage.setItem("fileName", boxLink);
-    } else if (romLocation == 'true') {
-      localStorage.setItem("internal", 'true');
-      localStorage.setItem("fileName", boxLink);
-      console.log(boxLink + 'FILENAME (INTERAL ROM)');
-    } else if (romLocation == 'false') {
-      localStorage.setItem("internal", 'false');
-      localStorage.setItem("fileName", boxLink);
-      console.log(boxLink + 'FILENAME (EXTERNAL ROM)');
-    } else {
-      localStorage.setItem("internal", 'true');
-      localStorage.setItem("fileName", boxLink);
-      console.log(boxLink + ' FILENAME (UNSPECIFIED ROM) DEFAULTING TO INTERNAL');
-      console.log(id);
-    }
-
+    
     localStorage.setItem("lastTile", this.id);
   });
 });

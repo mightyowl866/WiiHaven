@@ -1,0 +1,48 @@
+.options-menu{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-repeat: repeat-y;
+}
+body {
+    background: black;
+    background-image: linear-gradient(0deg, rgba(128, 128, 128, 0.2) 25%, transparent 25%, transparent 50%, rgba(128, 128, 128, 0.2) 50%, rgba(128, 128, 128, 0.2) 75%, transparent 75%, transparent);
+    background-size: 15px 15px;
+}
+.options-header{
+    text-align: right;
+    padding: 20px;
+    background: linear-gradient(0deg, #000000 1%, #272727 100%);
+    color: white;
+    border-bottom: 4px solid white;
+    
+}
+.options-content{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.box{
+    margin: auto;
+    padding: 200px;
+    margin-right: 260px;
+    background-color: white;
+    border-radius: 15px;
+    border: 10px solid #44b6f4;
+
+}
+.options-footer{
+    border-top: 4px solid white;    
+    padding: 75px;
+    background: linear-gradient(0deg, #000000 1%, #272727 100%);
+}
+button{
+    color: black;
+    background-color: white;
+    width: 400px;
+    height: 120px;
+    border-radius: 120px;
+    border-color: #44b6f4;
+}
+img{
+    margin-right: 13vh;
+}

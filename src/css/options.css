@@ -1,41 +1,64 @@
-.options-menu{
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.options-menu {
     overflow-x: hidden;
     overflow-y: hidden;
     background-repeat: repeat-y;
 }
+
 body {
     background: black;
     background-image: linear-gradient(0deg, rgba(128, 128, 128, 0.2) 25%, transparent 25%, transparent 50%, rgba(128, 128, 128, 0.2) 50%, rgba(128, 128, 128, 0.2) 75%, transparent 75%, transparent);
     background-size: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.options-header{
+
+.options-header {
     text-align: right;
-    padding: 20px;
+    padding: 2vh;
     background: linear-gradient(0deg, #000000 1%, #272727 100%);
     color: white;
     border-bottom: 4px solid white;
-    
+    margin-top: auto;
 }
-.options-content{
+
+.options-content {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    flex: 1; /* Allows content to expand and push footer to the bottom */
 }
-.box{
+
+.box {
+    width: 50vh;
     margin: auto;
-    padding: 200px;
-    margin-right: 260px;
+    height: 50vh;
     background-color: white;
     border-radius: 15px;
     border: 10px solid #44b6f4;
-
 }
-.options-footer{
-    border-top: 4px solid white;    
+
+.options-footer {
+    border-top: 4px solid white;
     padding: 75px;
     background: linear-gradient(0deg, #000000 1%, #272727 100%);
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
-button{
+.gameManager {
+    transform: scale(0.9);
+    margin-top: -4vh;
+    margin-right: 5vh;
+    margin-bottom: -9vh;
+}
+
+
+button {
     color: black;
     background-color: white;
     width: 400px;
@@ -43,6 +66,12 @@ button{
     border-radius: 120px;
     border-color: #44b6f4;
 }
-img{
+
+img {
     margin-right: 13vh;
+}
+h3 {
+    margin-top: 45vh;
+    text-align: center;
+    color: black;
 }

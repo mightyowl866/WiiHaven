@@ -37,11 +37,7 @@ document.addEventListener("keypress", function (event) {
   startup();
 });
 
-function PlaySound(soundobj) {
-  var thissound = document.getElementById(soundobj);
-  thissound.volume = 0.2;
-  thissound.play();
-}
+
 
 function PlayHomeSound(soundobj) {
   var thissound = document.getElementById(soundobj);
@@ -53,10 +49,6 @@ function StopSound(soundobj) {
   var thissound = document.getElementById(soundobj);
   thissound.pause();
   thissound.currentTime = 0;
-}
-
-function addClasses(id) {
-  let qid = "#" + id;
 }
 
 window.onload = function() {

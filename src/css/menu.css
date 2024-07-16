@@ -16,14 +16,13 @@ body{
     background-image: repeating-linear-gradient(to bottom, transparent, transparent 2px, rgba(0, 0, 0, 0.058) 2px, rgba(0, 0, 0, 0.058) 4px);
 }
 .empty-tile {
-    background: #D9D9D9;
+    
     border: 0.3vw solid #B6B6B6;
     border-radius: 2vw;
     height: 9.3vw;
     width: 20vw;
     display: inline-block;
     transition: transform 0.2s;
-    background-image: url("../../public/assets/empty.gif");
     background-position:center;
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -47,7 +46,7 @@ body{
 
 .empty-tile::before {
     content: "";
-    background-image: url("../../public/assets/empty.gif");
+    
     background-position:center;
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -148,7 +147,7 @@ body{
     display: inline-block;
     z-index: 100;
     width: 9vw;
-    right: 2vw;
+    right: -4vw;
     bottom: 1vh;
     cursor: pointer;
 }

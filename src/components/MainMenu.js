@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../css/menu.css';
 import Tile from '../components/menuTile.js';
 import BlackScreen from '../components/blackscreen.js';
+import { tilesConfig } from './tileConfig'; // Updated import to use tilesConfig
 
 function App() {
     const navigate = useNavigate();
@@ -17,20 +18,9 @@ function App() {
           <div id="teleport" className="teleport"></div>
           <div className="wrapper">
             <div className="slide-one">
-              <div className="start-wrap" id="startW">
-                <Tile id="Sonic Adventure 2"></Tile>
-                <Tile id="tile2"></Tile>
-                <Tile id="tile3"></Tile>
-                <Tile id="tile4"></Tile>
-                <Tile id="tile5"></Tile>
-                <Tile id="tile6"></Tile>
-                <Tile id="tile7"></Tile>
-                <Tile id="tile8"></Tile>
-                <Tile id="tile9"></Tile>
-                <Tile id="tile10"></Tile>
-                <Tile id="tile11"></Tile>
-                <Tile id="tile12"></Tile>
-              </div>
+            <div className="start-wrap" id="startW">
+                {tilesConfig.map(tile => <Tile key={tile.id} id={tile.id} image={tile.image}></Tile>)} {/* Updated to pass image prop */}
+            </div>
                     </div>
                     <div id="tile-content" className="hidden">
                         <div className="wiiMenu">
